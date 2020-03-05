@@ -16,7 +16,7 @@ Les principaux objectifs du projet :
 
  - Trouver les routes aériennes entre deux aéroports donnés et identifier les plans de vols realisés par une compagnie aérienne.
 
- - Identifier toutes les compagnies aériennes qui déservent un pays donné
+ - Identifier toutes les compagnies aériennes qui désservent un pays donné
 
  - Rechercher un aéroport dans un pays donné (plusieurs critères de recherche seront prévus)
 
