@@ -20,6 +20,6 @@ Les principaux objectifs du projet :
 
  - Rechercher un aéroport dans un pays donné (plusieurs critères de recherche seront prévus)
 
- - Gestion de l'authentification et administration du traffic (Create Update Delete)
+ - Gestion de l'authentification et administration du traffic (Create Update Delete) avec Django admin
 
  - Un point de statistique générale est prévu en Menu
