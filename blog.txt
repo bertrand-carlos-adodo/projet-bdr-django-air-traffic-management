@@ -1,2 +1,24 @@
-04/03/2020 :  Création du projet
+04/03/2020 : Création du projet (AirTrafficManagement)
 05/03/2020 : Initialisation du projet et définition du thème d'étude et des objectifs du projet
+06/03/2020 : Working progress
+07/03/2020 : Working progress
+08/03/2020 : Mise à jour et définition concrète des objectifs
+09/03/2020 : Working progress : Fouille 1 des données
+10/03/2020 : Choix des taches (MVT et SGDB)
+Models Django : Hamet
+Views Django : à définir
+Templates Django : Bertrand Carlos
+Scriprt PostgreSQL et Conception de la base de données : François-Xavier
+11/03/2020 : Working progres : Fouille 2 des données
+12/03/2020 : Tentative 1 Modélisation de la base de données
+12/03/2020 : Essai 1 de script python de parcours des données par Hamet
+13/03/2020 : Echanges (Chat) entre collaborateurs
+14/03/2020 : Echanges (Chat) entre collaborateurs
+15/03/2020 : Working progress
+16/03/2020 : Tentative 3 Modélisation de la base de données
+17/03/2020 : Proposition 1 de MCD au collaborateurs par Bertrand Carlos
+18/03/2020 : Analyse de la proposition par les collaborateurs
+19/03/2020 : Rendu 1 MCD par François-Xavier
+20/03/2020 : Visioconférence entre collaborateurs (analyse/échanges/critiques/observations sur le rendu 1)
+21/03/2020 : Working progress
+22/03/2020 : Working progress

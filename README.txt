@@ -2,7 +2,7 @@ Projet de Base de Données Relationnelles (Semestre 2 Master Data Science)
 
 Notre projet porte sur le thème : Gestion du traffic aérien.
 
-Trinome composé de : 
+Trinome composé de :
 
 - FRANCOIS XAVIER WOCKMATCHIEU
 - HAMET NIANG
@@ -12,7 +12,7 @@ Fonctionnement de l’application :
 
 Nous appellerons [AirTrafficManagement] notre application.
 
-Les principaux objectifs du projet : 
+Les principaux objectifs du projet :
 
  - Trouver les routes aériennes entre deux aéroports donnés et identifier les plans de vols realisés par une compagnie aérienne.
 
@@ -23,6 +23,3 @@ Les principaux objectifs du projet :
  - Gestion de l'authentification et administration du traffic (Create Update Delete)
 
  - Un point de statistique générale est prévu en Menu
-
- 
-
