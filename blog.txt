@@ -22,18 +22,23 @@ Scriprt PostgreSQL et Conception de la base de données : François-Xavier
 20/03/2020 : Visioconférence entre collaborateurs (analyse/échanges/critiques/observations sur le rendu 1)
 21/03/2020 : Working progress
 22/03/2020 : Working progress : renaming of the app created by Hamet
-création de 3 branches pour chaque collaborateurs
-branch hamet-app
-branch carlos-app
-branch francois-app
-Pour mettre à jour vos dépots sur Git veillez svp switcher sur votre branche avant de commencer.
-La branche de base origin s'appelle master
-Switcher avec la commande #git checkout nom_de_votre_branche#
-Par exemple si moi je finis de travailler et je veux faire un push sur git je metsles commandes suvantes :
-#git checkout carlos-app#
-#git add -A# : pour ajouter tout le travail
-#git status# : pour vérifier si c'est OK
-#git commit -m 'working progress'# (Prenons l'habitude de renommer nos commits 'working progress' pour avoir un dépot propre)
-#git log#
-#git push#
-#git pull# pour vérification
+22/03/202  : création de 3 branches pour chaque collaborateurs
+22/03/2020 : branch hamet-app
+22/03/2020 : branch carlos-app
+22/03/2020 : branch francois-app
+22/03/2020 : Pour mettre à jour vos dépots sur Git veillez svp switcher sur votre branche avant de commencer.
+22/03/2020 : La branche de base origin s'appelle master
+22/03/2020 : Switcher avec la commande #git checkout nom_de_votre_branche#
+22/03/2020 : Par exemple si moi je finis de travailler et je veux faire un push sur git je metsles commandes suvantes :
+22/03/2020 : #git checkout carlos-app#
+22/03/2020 : #git add -A# : pour ajouter tout le travail
+22/03/2020 : #git status# : pour vérifier si c'est OK
+22/03/2020 : #git commit -m 'working progress'# (Prenons l'habitude de renommer nos commits 'working progress' pour avoir un dépot propre)
+22/03/2020 : #git log#
+22/03/2020 : #git push#
+22/03/2020 : #git pull# pour vérification
+22/03/2020 : Création de 3 applications Django pour chaque membre du groupe.
+22/03/2020 : Chacun travaille dans son application et fait le push sur git dans sa branche
+22/03/2020 : On pourra copier le contenu des fichiers de chaque membre et mettre à jour son application pour évoluer.
+22/03/2020 : Cela permettrai de mieux gérer les choses
+22/03/2020 : Et au final on fusionnera tout dans l'application AirTrafficManagement
