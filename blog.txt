@@ -21,4 +21,19 @@ Scriprt PostgreSQL et Conception de la base de données : François-Xavier
 19/03/2020 : Rendu 1 MCD par François-Xavier
 20/03/2020 : Visioconférence entre collaborateurs (analyse/échanges/critiques/observations sur le rendu 1)
 21/03/2020 : Working progress
-22/03/2020 : Working progress
+22/03/2020 : Working progress : renaming of the app created by Hamet
+création de 3 branches pour chaque collaborateurs
+branch hamet-app
+branch carlos-app
+branch francois-app
+Pour mettre à jour vos dépots sur Git veillez svp switcher sur votre branche avant de commencer.
+La branche origin est la branche master
+Switcher avec la commande #git checkout nom_de_votre_branche#
+Par exemple si moi je finis de travailler et je veux faire un push sur Git je metsles commandes entre # # suvantes :
+#git checkout carlos-app#
+#git add -A# : pour ajouter tout le travail
+#git status# : pour vérifier si c'est OK
+#git commit -m 'working progress'# (Prenons l'habitude de renommer nos commit ainsi pour avoir un dépot propre)
+#git log#
+#git push#
+#git pull# pour vérification
