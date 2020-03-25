@@ -9,8 +9,8 @@ class City(models.Model):
     name_city=models.CharField(max_length=50)
     clé_contry=models.ForeignKey(Contry,on_delete=models.CASCADE)
     
-class Airoport(models.Model):
-    name_airoport=models.CharField(max_length=200)
+class Aeroport(models.Model):
+    name_aeroport=models.CharField(max_length=200)
     ville=models.CharField(max_length=200)
     latitude=models.IntegerField()
     latitude=models.IntegerField()
@@ -27,8 +27,9 @@ class Plane(models.Model):
     code_IATA=models.CharField(max_length=20)
     code_OACI=models.CharField(max_length=20)
     clé_airline=models.ForeignKey(Contry,on_delete=models.CASCADE)
+    
 class Ligne(models.Model):
     clé_airline=models.ForeignKey(Airline,on_delete=models.CASCADE)
-    clé_airoport_dep=models.ForeignKey(Airoport,on_delete=models.CASCADE)
-    clé_airoport_=models.ForeignKey(Airoport,related_name="airoportarr",on_delete=models.CASCADE)
+    clé_aeroport_dep=models.ForeignKey(Aeroport,on_delete=models.CASCADE)
+    clé_aeroport_arr=models.ForeignKey(Aeroport,related_name="aeroportarr",on_delete=models.CASCADE)
     ligne_direct=models.BooleanField(default=True)
