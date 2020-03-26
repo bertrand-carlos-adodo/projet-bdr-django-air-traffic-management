@@ -36,3 +36,6 @@ Et au final on fusionnera tout dans l'application AirTrafficManagement
 24/03/2020 : Fichiers models.py dans la branche hamet
 25/03/2020 : Dépot du fichier remarque.pdf sur git [Modélisation de le base de données]
 26/03/2020 : Mise à jour du fichier remarque.pdf et dépot du dictionnaire de données, MCD, MLD, Scrip PostgreSQL de la base de données.
+Création de la base de données PostgreSQL.
+Fichiers models.py dans la branche carlos-app
+27/03/2020 :
