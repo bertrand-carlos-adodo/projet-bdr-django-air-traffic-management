@@ -34,5 +34,5 @@ Cela permettrai de mieux gérer les choses
 Et au final on fusionnera tout dans l'application AirTrafficManagement
 23/03/2020 : Working progress
 24/03/2020 : Fichiers models.py dans la branche hamet
-25/03/2020 : Dépot du fichier pattern.pdf sur git [Modélisation de le base de données]
-26/03/2020 : Working progress
+25/03/2020 : Dépot du fichier remarque.pdf sur git [Modélisation de le base de données]
+26/03/2020 : Mise à jour du fichier remarque.pdf et dépot du dictionnaire de données, MCD, MLD, Scrip PostgreSQL de la base de données.

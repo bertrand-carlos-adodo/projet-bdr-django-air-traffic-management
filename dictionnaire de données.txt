@@ -1,0 +1,71 @@
+Dictionnaire de données [AirTrafficManagement]
+
+Nom : airport_name
+Code : AIRPORT_NAME
+Type : VARCHAR
+Taille : 50
+
+Nom : timezone2
+Code : TIMEZONE2
+Type : VARCHAR
+Taille : 50
+
+Nom : city_name
+Code : CITY_NAME
+Type : VARCHAR
+Taille : 50
+
+Nom : country_name
+Code : COUNTRY_NAME
+Type : VARCHAR
+Taille : 50
+
+Nom : plane_name
+Code : PLANE_NAME
+Type : VARCHAR
+Taille : 50
+
+Nom : airline_id
+Code : AIRLINE_ID
+Type : INTEGER
+
+Nom : airline_name
+Code : AIRLINE_NAME
+Type : VARCHAR
+Taille : 50
+
+Nom : airline_actif
+Code : AIRLINE_ACTIF
+Type : TINYINT
+
+Nom : plane_id
+Code : PLANE_ID
+Type : INTEGER
+
+Nom : country_id
+Code : COUNTRY_ID
+Type : INTEGER
+
+Nom : city_id
+Code : CITY_ID
+Type : INTEGER
+
+Nom : airport_id
+Code : AIRPORT_ID
+Type : INTEGER
+
+Nom : longitude
+Code : LONGITUDE
+Type : DOUBLE PRECISION
+
+Nom : latitude
+Code : LATITUDE
+Type : DOUBLE PRECISION
+
+Nom : timezone1
+Code : TIMEZONE1
+Type : DOUBLE PRECISION
+
+Nom : routes_id
+Code : ROUTES_ID
+Type : INTEGER
