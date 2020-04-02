@@ -1,20 +1,8 @@
 04/03/2020 : Création du projet [AirTrafficManagement]
 05/03/2020 : Initialisation du projet. Définition du thème d'étude et des objectifs du projet
-06/03/2020 : Working progress
-07/03/2020 : Working progress
 08/03/2020 : Mise à jour des objectifs
 09/03/2020 : Working progress
 10/03/2020 : Partage des taches [MVT et SGDB]
-11/03/2020 : Working progress
-12/03/2020 : Working progress
-12/03/2020 : Working progress
-13/03/2020 : Working progress
-14/03/2020 : Working progress
-15/03/2020 : Working progress
-16/03/2020 : Working progress
-17/03/2020 : Working progress
-18/03/2020 : Working progress
-19/03/2020 : Working progress
 20/03/2020 : Visioconférence entre collaborateurs [Echange sur le MCD]
 21/03/2020 : Working progress
 22/03/2020 : Création de 3 branches, une pour chaque collaborateur
@@ -38,4 +26,8 @@ Et au final on fusionnera tout dans l'application AirTrafficManagement
 26/03/2020 : Mise à jour du fichier remarque.pdf et dépot du dictionnaire de données, MCD, MLD, Scrip PostgreSQL de la base de données.
 Création de la base de données PostgreSQL.
 Création des modèles django [voir fichier models.py dans la branche carlos-app]
-27/03/2020 :
+30/03/2020 : Data cleaning
+30/03/2020 : Data cleaning - Done
+31/03/2020 : Script de connexion à la base de données
+01/04/2020 : Remplissage de le base de données - Done
+02/04/2020 : Début conception des pages web
