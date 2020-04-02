@@ -1,8 +1,13 @@
 {% extends 'layouts/base.html' %}
 
-{% block title %}AirtrafficManagement|Authentification{% endblock title %}
+{% block title %}AirtrafficManagement | Authentification{% endblock title %}
 
 {% block content %}
-    <h1>AirtrafficManagement|Authentification</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse molestiae provident ut tempora saepe. Explicabo, harum excepturi, provident in eos voluptates reiciendis iste nobis quia dignissimos illo! Quis, et molestiae?</p>
+    <h1 align = "center">⚠ Page d'authentification</h1>
+    <article>
+        <p class="content"> Bonjour, vous etes sur la page d'authentification et vous essayer d'accéder à la page d'administration de ce site.
+            <br> Si vous etes administrateur et disposez des droits nécessaires, 👉  <a href="../admin/">Continuer</a> et saisissez vos identifiants.
+            <br> Sinon veillez revenir à la page d' <a href="{% url 'home' %}">Accueil</a>
+        </p>
+    </article>
 {% endblock content %}

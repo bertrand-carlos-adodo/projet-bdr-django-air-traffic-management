@@ -82,7 +82,7 @@ body {
 
 #slides figure {
     display: inline-block;
-    width: 100vw;
+    width: 100%;
     max-height: 100%;
     margin: 0;
 }
@@ -102,24 +102,29 @@ body {
     width: inherit;
     background-color: rgba(0,0,0,0.5);
     color: white;
+    font-size: 1.5em;
 }
 
-@keyframes slide {
-    0%, 20%, 100% {
-        left: 0; /*1ère image*/
-    }
-    35%, 50% {
-        left: -100vw; /*2ème image*/
-    }
-    70%, 95% {
-        left: -200vw; /*3ème image*/
-    }
+article {
+    background-color: #fff;
+    border: 1px solid #c5c5c5;
+    margin-bottom: 2em;
+    padding: 1em;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
-#slides {
-    animation-name: slide;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+article .content {
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+article a {
+    color: #2962ff;
+    text-decoration: none;
 }
