@@ -17,7 +17,7 @@ class City(models.Model):
 
 class Airport(models.Model):
     airport_id = models.IntegerField(unique=True, primary_key=True)
-    airport_name = models.CharField(max_length=50)
+    airport_name = models.CharField(max_length=150)
     longitude = models.FloatField()
     latitude = models.FloatField()
     altitude = models.FloatField()
@@ -30,15 +30,15 @@ class Airport(models.Model):
 
 class Plane(models.Model):
     plane_id = models.IntegerField(unique=True, primary_key=True)
-    plane_name = models.CharField(max_length=50)
+    plane_name = models.CharField(max_length=150)
 
     def __str__(self):
         return '%s' % (self.plane_name)
 
 class Airline(models.Model):
     airline_id = models.IntegerField(unique=True, primary_key=True)
-    airline_name = models.CharField(max_length=50)
-    airline_act = models.BooleanField()
+    airline_name = models.CharField(max_length=150)
+    airline_actif = models.BooleanField()
     country_id = models.ForeignKey(Country, on_delete=models.CASCADE)
 
     def __str__(self):
