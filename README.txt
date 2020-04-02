@@ -1,6 +1,6 @@
 Projet de Base de Données Relationnelles (Semestre 2 Master Data Science)
 
-Notre projet porte sur le thème : Gestion du traffic aérien.
+Notre projet porte sur le thème : Gestion du trafic aérien.
 
 Trinome composé de :
 
