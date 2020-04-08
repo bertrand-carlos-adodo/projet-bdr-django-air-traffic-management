@@ -2,9 +2,12 @@
     <div class="wrapper">
         <a href="{% url 'home' %}" class="navbar-brand">AirTrafficManagement</a>
         <ul class="navbar-right">
-            <li><a href="{% url 'home' %}">Accueil</a></li>
-            <li><a href="{% url 'statistique' %}">Statistiques</a></li>
-            <li><a href="{% url 'authentification' %}">🔑 S'authentifier</a></li>
+            <li><a href="{% url 'home' %}">Accueil |</a></li>
+            <li><a href="{% url 'trafic:plan' %}">Plan de vols |</a></li>
+            <li><a href="{% url 'trafic:densite' %}">Densité du trafic |</a></li>
+            <li><a href="{% url 'trafic:entite' %}">Entités |</a></li>
+            <li><a href="{% url 'statistique' %}">Bilan |</a></li>
+            <li><a href="{% url 'authentification' %}">Administration</a></li>
         </ul>
     </div>
 </nav>

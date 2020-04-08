@@ -8,8 +8,8 @@ body {
     padding: 0;
 }
 .wrapper {
-    width: 1440px;
-    max-width: 90%;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -19,11 +19,11 @@ body {
 .navbar {
     background-color: #000;
     border-top: 4px solid #1e88e5;
-    padding: 1em 0;
+    padding: 1.5em 0;
 }
 
 .navbar .navbar-brand {
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: #fff;
     text-decoration: none;
 }
@@ -73,9 +73,9 @@ body {
 }
 
 #slides {
-    position: absolute;
+    /*position: absolute;
     top: 0;
-    left: 0;
+    left: 0;*/
     display: flex;
     max-height: 100%;
 }
@@ -97,7 +97,7 @@ body {
 #slides figure figcaption {
     position: absolute;
     bottom: 0;
-    padding: 1.0em 0;
+    padding: 0.5em 0;
     text-align: center;
     width: inherit;
     background-color: rgba(0,0,0,0.5);
@@ -117,7 +117,7 @@ article .content {
     padding: 0.5em;
     text-align: center;
     font-size: 1.5em;
-    font-style: italic;
+    font-variant: small-caps;
 }
 
 article a:hover {
