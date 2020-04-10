@@ -12,11 +12,11 @@ def connexion(request):
         username = request.POST['username']
         password = request.POST['password']
         user = authenticate(request, username=username, password=password)
-        if user is not None:
+        if user is not None and User.is_active is True:
             login(request, user)
             return HttpResponseRedirect(reverse('home'))
         else:
-            context['error'] = "Nom d'utilisateur ou mot de passe incorrect !!"
+            context['error'] = "Nom d'utilisateur ou mot de passe incorrect ou utilisateur non actif !!"
             return render(request, 'pages/login.html', context)
     else:
         return render(request, 'pages/login.html', context)
