@@ -31,3 +31,9 @@ Création des modèles django [voir fichier models.py dans la branche carlos-app
 31/03/2020 : Script de connexion à la base de données
 01/04/2020 : Remplissage de le base de données - Done
 02/04/2020 : Début conception des pages web
+03/04/2020 : Mise à jour de models.py
+06/04/2020 : Echange visioconférence entre collaborateur
+07/04/2020 : Gestion de l'authentification à l'application : working progress
+08/04/2020 : Gestion de l'authentification à l'application : working progress
+09/04/2020 : Gestion de l'authentification à l'application : Done
+10/04/2020 : Web : Mise en forme
