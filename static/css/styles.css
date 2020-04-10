@@ -23,9 +23,10 @@ body {
 }
 
 .navbar .navbar-brand {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #fff;
     text-decoration: none;
+    font-variant: small-caps;
 }
 
 .navbar .navbar-right {
@@ -36,11 +37,14 @@ body {
     display: inline-block;
     list-style: none;
     margin-top:0.3em;
-    margin-right:0.8em;
+    margin-right:0.5em;
+    font-variant: small-caps;
+    font-size: 0.9em;
+    color: #fff;
 }
 
 .navbar .navbar-right li:last-child {
-    margin-right:0;
+    margin-right:0.5em;
 }
 
 .navbar .navbar-right li a {
@@ -102,7 +106,8 @@ body {
     width: inherit;
     background-color: rgba(0,0,0,0.5);
     color: white;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    font-variant: small-caps;
 }
 
 article {
@@ -122,6 +127,10 @@ article .content {
 
 article a:hover {
     text-decoration: underline;
+}
+
+h1 {
+    font-variant: small-caps;
 }
 
 article a {

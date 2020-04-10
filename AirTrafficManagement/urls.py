@@ -24,8 +24,9 @@ handler500 = 'AirTrafficManagement.views.handler500'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.login, name = 'login'),
-    path('home', views.home, name = 'home'),
+    path('', views.connexion, name = 'connexion'),
+    path('logout/', views.deconnexion, name = 'deconnexion'),
+    path('home/', views.home, name = 'home'),
     path('authentification/', views.authentification, name = 'authentification'),
     path('statistique/', views.statistique, name = 'statistique'),
     path('trafic/', include('carlosApp.urls')),

@@ -23,8 +23,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'l+e5f$-z&iq1nk-*b3oij1-^8wt(%+iivyukp144+m))l@kwk('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
+#DEBUG = False
+#ALLOWED_HOSTS = ['localhost','127.0.0.1']
+
+DEBUG = True
 ALLOWED_HOSTS = []
 
 
@@ -131,9 +134,10 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
+LOGIN_URL = '/'
 
 INTERNAL_IPS = [
     # ...
-    '127.0.0.1',
+    #'127.0.0.1',
     # ...
 ]

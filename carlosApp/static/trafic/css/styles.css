@@ -46,7 +46,7 @@
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 270px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -59,8 +59,9 @@
 
 .sidebar-nav li a {
     display: block;
-    text-decoration: none;
+    text-decoration: underline;
     color: #fff;
+    font-variant: small-caps;
 }
 
 .sidebar-nav li a:hover {
@@ -99,7 +100,7 @@
     }
 
     #sidebar-wrapper {
-        width: 250px;
+        width: 270px;
     }
 
     #wrapper.toggled #sidebar-wrapper {
