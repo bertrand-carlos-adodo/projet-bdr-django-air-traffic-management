@@ -30,28 +30,26 @@
                     <h1 align='center'>AirtrafficManagement | Entité impliquées dans le trafic</h1>
                     <div class="search-container">
                         <form action="">
-                          <input type="text" placeholder="Rechercher une compagnie aérienne" name="">
+                          <input type="text" placeholder="Rechercher une ville" name="">
                           <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
                       </div>
                     </div>
-                    <h3 id="taille" align = 'center'>Liste des {{ airline|length }} premières compagnies aériennes avec {{ airlines|length }} compagnies au total dans la base</h3><br>
+                    <h3 id="taille" align = 'center'>Liste des {{ city|length }} premières villes avec {{ cities|length }} villes au total dans la base</h3><br>
                     <table class="content-table">
                         <thead>
                             <tr>
                                 <th>N°</th>
-                                <th>Nom de la compagnie</th>
-                                <th>Actif</th>
-                                <th>Pays d'origine</th>
+                                <th>Nom de la ville</th>
+                                <th>Pays</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {% for airline in airline %}
+                            {% for city in city %}
                             <tr>
-                                <td>{{airline.airline_id}}</td>
-                                <td>{{airline.airline_name}}</td>
-                                <td>{{airline.airline_actif}}</td>
-                                <td>{{airline.country_id}}</td>
+                                <td>{{city.city_id}}</td>
+                                <td>{{city.city_name}}</td>
+                                <td>{{city.country_id}}</td>
                             </tr>
                             {%endfor%}
                         </tbody>

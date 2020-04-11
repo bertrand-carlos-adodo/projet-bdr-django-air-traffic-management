@@ -30,28 +30,34 @@
                     <h1 align='center'>AirtrafficManagement | Entité impliquées dans le trafic</h1>
                     <div class="search-container">
                         <form action="">
-                          <input type="text" placeholder="Rechercher une compagnie aérienne" name="">
+                          <input type="text" placeholder="Rechercher un aéroport" name="">
                           <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
                       </div>
                     </div>
-                    <h3 id="taille" align = 'center'>Liste des {{ airline|length }} premières compagnies aériennes avec {{ airlines|length }} compagnies au total dans la base</h3><br>
+                    <h3 id="taille" align = 'center'>Liste des {{ airport|length }} premiers aéroports avec {{ airports|length }} aéroports au total dans la base</h3><br>
                     <table class="content-table">
                         <thead>
                             <tr>
                                 <th>N°</th>
-                                <th>Nom de la compagnie</th>
-                                <th>Actif</th>
-                                <th>Pays d'origine</th>
+                                <th>Nom de l'aéroport</th>
+                                <th>Longitude</th>
+                                <th>Latitude</th>
+                                <th>Altitude</th>
+                                <th>Timezone</th>
+                                <th>Ville</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {% for airline in airline %}
+                            {% for airport in airport %}
                             <tr>
-                                <td>{{airline.airline_id}}</td>
-                                <td>{{airline.airline_name}}</td>
-                                <td>{{airline.airline_actif}}</td>
-                                <td>{{airline.country_id}}</td>
+                                <td>{{airport.airport_id}}</td>
+                                <td>{{airport.airport_name}}</td>
+                                <td>{{airport.longitude}}</td>
+                                <td>{{airport.latitude}}</td>
+                                <td>{{airport.altitude}}</td>
+                                <td>{{airport.timezone1}}</td>
+                                <td>{{airport.city_id}}</td>
                             </tr>
                             {%endfor%}
                         </tbody>

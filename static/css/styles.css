@@ -20,6 +20,7 @@ body {
     background-color: #000;
     border-top: 4px solid #1e88e5;
     padding: 1.5em 0;
+    /*position: fixed;*/
 }
 
 .navbar .navbar-brand {
