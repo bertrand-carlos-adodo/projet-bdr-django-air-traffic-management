@@ -1,5 +1,10 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+from .models import Airline
+
+def show_airline(request):
+    	airline = Airline.objects.all()
+    	return render(request, {'airline':airline})
 
 @login_required
 def plan(request):

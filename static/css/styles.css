@@ -59,6 +59,7 @@ body {
 .footer  {
     margin-top: 3em;
     color: rgba(0, 0, 0, 0.6);
+    /*text-align: center;*/
 }
 
 .footer:before {
@@ -131,6 +132,10 @@ article a:hover {
 
 h1 {
     font-variant: small-caps;
+}
+
+#under1, #under2 {
+    text-decoration: underline;
 }
 
 article a {

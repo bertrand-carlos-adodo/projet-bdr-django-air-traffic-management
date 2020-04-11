@@ -1,47 +1,13 @@
-
-#wrapper {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-#wrapper.toggled {
-    padding-left: 250px;
-}
-
 #sidebar-wrapper {
-    z-index: 1000;
     position: fixed;
-    left: 250px;
-    width: 0;
     height: 100%;
     margin-left: -250px;
-    overflow-y: auto;
     background: #1e88e5;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-#wrapper.toggled #sidebar-wrapper {
-    width: 250px;
-}
-
-#page-content-wrapper {
-    width: 100%;
-    position: absolute;
-    padding: 15px;
 }
 
 #wrapper.toggled #page-content-wrapper {
-    position: absolute;
     margin-right: -250px;
 }
-
-/* Sidebar Styles */
 
 .sidebar-nav {
     position: absolute;
@@ -117,3 +83,37 @@
         margin-right: 0;
     }
 }
+
+.content-table {
+    border-collapse: collapse;
+    margin-left: 0.7em;
+    margin-right: 0.8em;
+    font-size: 0.7em;
+    min-width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+.content-table thead tr {
+    background-color: #1e88e5;
+    color: #fff;
+    text-align: left;
+  }
+
+.content-table tr:hover {
+    /*color: #1e88e5;*/
+}
+
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+
+  .content-table tbody tr {
+    border-bottom: 1px solid #c4c4c4;
+  }
+
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #1e88e5;
+  }
