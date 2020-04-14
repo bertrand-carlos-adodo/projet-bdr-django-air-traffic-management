@@ -1,0 +1,12 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{% static 'trafic/css/styles.css' %}">
+    <script type="text/javascript" src="{% static 'trafic/css/styles.js' %}"></script>
+{% endblock stylesheets %}
+
+{% block content %}
+    {% block body %}{% endblock body %}
+{% endblock content %}

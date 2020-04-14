@@ -1,0 +1,55 @@
+{% extends 'trafic/base.html' %} {% block title %}AirTrafficManagement | Entité impliquées dans le trafic{% endblock title %} {% block body %}
+<div id="wrapper">
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li>
+                <a href="{% url 'trafic:entite/airline' %}">Compagnies</a>
+            </li>
+            <li>
+                <a href="{% url 'trafic:entite/aeroports' %}">Aéroports</a>
+            </li>
+            <li>
+                <a href="{% url 'trafic:entite/villes' %}">Villes</a>
+            </li>
+            <li>
+                <a href="{% url 'trafic:entite/pays' %}">Pays</a>
+            </li>
+        </ul>
+    </div>
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 align='center'>Resultat: {{ planes|length }} Avions au total</h1>
+                    <div class="form group">
+                        <form class="navbar-form navbar-left" action="" method="POST">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <input type="text" id="your_name" name="your_name" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </form>
+                        <div>
+                            <table class="content-table" style="overflow-y: scroll;">
+                                <thead>
+                                    <tr>
+                                        <th>plane_name</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for plane in planes %}
+                                    <tr>
+
+                                        <td>{{ plane.plane_name }}</td>
+
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock body %}

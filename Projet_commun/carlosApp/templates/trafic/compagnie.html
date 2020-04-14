@@ -1,0 +1,67 @@
+{% extends 'trafic/base.html' %} {% block title %}AirTrafficManagement | Entité impliquées dans le trafic{% endblock title %} {% block body %}
+<div id="wrapper">
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li>
+                <a href="{% url 'trafic:entite/aeroports' %}">Aéroports</a>
+            </li>
+            <li>
+                <a href="{% url 'trafic:entite/avions' %}">Avions</a>
+            </li>
+            <li>
+                <a href="{% url 'trafic:entite/villes' %}">Villes</a>
+            </li>
+            <li>
+                <a href="{% url 'trafic:entite/pays' %}">Pays</a>
+            </li>
+        </ul>
+    </div>
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 align='center'>Resultat: {{ compagnies|length }} Compogines au total</h1>
+                    <div class="form group">
+                        <form class="navbar-form navbar-left" action="" method="POST">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <input type="text" id="your_name" name="your_name" class="form-control" placeholder="Search">
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="actif" id="actif" name="etat">
+                                <label class="form-check-label" for="apple">Actif</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="inactif" id="inactif" name="etat">
+                                <label class="form-check-label" for="mango">Nom Actif</label>
+                            </div>
+                            <button type="submit" class="btn btn-success">Submit</button>
+
+                        </form>
+                        <div>
+                            <table class="content-table" style="overflow-y: scroll;">
+                                <thead>
+                                    <tr>
+                                        <th>airline_name</th>
+                                        <th>airline_actif</th>
+                                        <th>country_id</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for compagnie in compagnies %}
+                                    <tr>
+
+                                        <td>{{ compagnie.airline_name }}</td>
+                                        <td>{{ compagnie.airline_actif }}</td>
+                                        <td>{{ compagnie.country_id }}</td>
+
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock body %}

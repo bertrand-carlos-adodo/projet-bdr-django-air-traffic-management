@@ -1,0 +1,119 @@
+#sidebar-wrapper {
+    position: fixed;
+    height: 100%;
+    margin-left: -250px;
+    background: #1e88e5;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    margin-right: -250px;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 270px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: underline;
+    color: #fff;
+    font-variant: small-caps;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #1e88e5;
+    background: #fff;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #fff;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 270px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin-left: 0.7em;
+    margin-right: 0.8em;
+    font-size: 0.7em;
+    min-width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+.content-table thead tr {
+    background-color: #1e88e5;
+    color: #fff;
+    text-align: left;
+  }
+
+.content-table tr:hover {
+    /*color: #1e88e5;*/
+}
+
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+
+  .content-table tbody tr {
+    border-bottom: 1px solid #c4c4c4;
+  }
+
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #1e88e5;
+  }

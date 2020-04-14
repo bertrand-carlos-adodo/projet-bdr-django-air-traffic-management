@@ -1,0 +1,46 @@
+{% extends 'trafic/base.html' %} {% block title %}AirTrafficManagement | Entité impliquées dans le trafic{% endblock title %} {% block body %}
+<div id="wrapper">
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li>
+                <a href="{% url 'trafic:entite/airline' %}">Compagnies</a>
+            </li>
+            <li>
+                <a href="{% url 'trafic:entite/aeroports' %}">Aéroports</a>
+            </li>
+            <li>
+                <a href="{% url 'trafic:entite/avions' %}">Avions</a>
+            </li>
+            <li>
+                <a href="{% url 'trafic:entite/pays' %}">Pays</a>
+            </li>
+        </ul>
+    </div>
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 align='center'>AirtrafficManagement | Entité impliquées dans le trafic</h1>
+                    <table class="content-table">
+                        <thead>
+                            <tr>
+                                <th>city_name</th>
+                                <th>country_id</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for ville in villes %}
+                            <tr>
+                                <td>{{ ville.city_name }}</td>
+                                <td>{{ ville.country_id }}</td>
+                            </tr>
+                            {% endfor %}
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

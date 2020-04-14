@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body {
+    font-family: 'Open Sans' Arial, Helvetica, sans-serif;
+    background-color: #fefefe;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+.navbar {
+    background-color: #000;
+    border-top: 4px solid #1e88e5;
+    padding: 1.5em 0;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.3em;
+    color: #fff;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+.navbar .navbar-right {
+    float: right;
+}
+
+.navbar .navbar-right li {
+    display: inline-block;
+    list-style: none;
+    margin-top:0.3em;
+    margin-right:0.5em;
+    font-variant: small-caps;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.navbar .navbar-right li:last-child {
+    margin-right:0.5em;
+}
+
+.navbar .navbar-right li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-right li a:hover {
+    color: #1e88e5;
+}
+
+.footer  {
+    margin-top: 3em;
+    color: rgba(0, 0, 0, 0.6);
+    /*text-align: center;*/
+}
+
+.footer:before {
+    content: " ";
+    display: block;
+    height: 1px;
+    background-color: #1e88e5;
+    width: 10%;
+    margin: 0.5em auto;
+}
+#slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 400px;
+}
+
+#slides {
+    /*position: absolute;
+    top: 0;
+    left: 0;*/
+    display: flex;
+    max-height: 100%;
+}
+
+#slides figure {
+    display: inline-block;
+    width: 100%;
+    max-height: 100%;
+    margin: 0;
+}
+
+#slides figure img {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#slides figure figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 0.5em 0;
+    text-align: center;
+    width: inherit;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 1.3em;
+    font-variant: small-caps;
+}
+
+article {
+    background-color: #fff;
+    border: 1px solid #c5c5c5;
+    margin-bottom: 2em;
+    padding: 1em;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+article .content {
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.5em;
+    font-variant: small-caps;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-variant: small-caps;
+}
+
+#under1, #under2 {
+    text-decoration: underline;
+}
+
+article a {
+    color: #2962ff;
+    text-decoration: none;
+}
