@@ -4,25 +4,7 @@
 
 {% block body %}
 <div id="wrapper">
-    <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li>
-                <a href="{% url 'trafic:entite' %}">Compagnies</a>
-            </li>
-            <li>
-                <a href="{% url 'trafic:airport' %}">Aéroports</a>
-            </li>
-            <li>
-                <a href="{% url 'trafic:avion' %}">Avions</a>
-            </li>
-            <li>
-                <a href="{% url 'trafic:city' %}">Villes</a>
-            </li>
-            <li>
-                <a href="{% url 'trafic:pays' %}">Pays</a>
-            </li>
-        </ul>
-    </div>
+    {% include 'trafic/layouts_entite/_sidebar_entite.html' %}
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row">

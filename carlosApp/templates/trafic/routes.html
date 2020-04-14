@@ -12,24 +12,30 @@
                     <h1 align='center'>AirtrafficManagement | Entité impliquées dans le trafic</h1>
                     <div class="search-container">
                         <form action="">
-                          <input type="text" placeholder="Rechercher un pays" name="">
+                          <input type="text" placeholder="Rechercher une ligne aérienne" name="">
                           <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
                       </div>
                     </div>
-                    <h3 id="taille" align = 'center'>Liste des {{ pays|length }} premiers pays avec {{ payss|length }} pays au total dans la base</h3><br>
+                    <h3 id="taille" align = 'center'>Liste des {{ route|length }} premières lignes aériennes avec {{ routes|length }} lignes au total dans la base</h3><br>
                     <table class="content-table">
                         <thead>
                             <tr>
                                 <th>N°</th>
-                                <th>Nom du pays</th>
+                                <th>Aéroport source</th>
+                                <th>Aéroport de destination</th>
+                                <th>Compagnie</th>
+                                <th>Equipement utilisé</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {% for pays in pays %}
+                            {% for route in route %}
                             <tr>
-                                <td>{{pays.country_id}}</td>
-                                <td>{{pays.country_name}}</td>
+                                <td>{{route.routes_id}}</td>
+                                <td>{{route.airport_id_source}}</td>
+                                <td>{{route.airport_id_dest}}</td>
+                                <td>{{route.airline_id}}</td>
+                                <td>{{route.plane_id}}</td>
                             </tr>
                             {%endfor%}
                         </tbody>

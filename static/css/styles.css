@@ -20,7 +20,15 @@ body {
     background-color: #000;
     border-top: 4px solid #1e88e5;
     padding: 1.5em 0;
-    /*position: fixed;*/
+    /*position: absolute;
+    top: 0;*/
+}
+
+.fixed {
+    position: fixed;
+    width: auto;
+    top: 0em;
+    z-index: 20;
 }
 
 .navbar .navbar-brand {

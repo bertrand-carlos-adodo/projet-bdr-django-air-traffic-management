@@ -11,4 +11,5 @@ urlpatterns = [
     path('city/', views.show_city, name = 'city'),
     path('country/', views.show_pays, name = 'pays'),
     path('plane/', views.show_avion, name = 'avion'),
+    path('itineraires/', views.show_routes, name = 'routes'),
 ]

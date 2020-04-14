@@ -19,8 +19,10 @@
 }
 
 .sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
+    text-indent: 10px;
+    line-height: 30px;
+    font-size: 0.8em;
+    font-style: italic;
 }
 
 .sidebar-nav li a {
@@ -76,6 +78,7 @@
     #page-content-wrapper {
         padding: 20px;
         position: relative;
+        width: auto;
     }
 
     #wrapper.toggled #page-content-wrapper {

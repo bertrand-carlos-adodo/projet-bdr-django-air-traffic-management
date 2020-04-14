@@ -3,6 +3,17 @@
 {% block title %}AirTrafficManagement | Densité du trafic{% endblock title %}
 
 {% block body %}
-<h1 align = 'center'>AirtrafficManagement | Densité du trafic</h1>
-    <p></p>
+<div id="wrapper">
+    {% include 'trafic/layouts_densite/_sidebar_densite.html' %}
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 align = 'center'>AirtrafficManagement | Densité du trafic</h1>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock body %}

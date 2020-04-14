@@ -4,19 +4,7 @@
 
 {% block body %}
 <div id="wrapper">
-    <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li>
-                <a href="#">Rechercher un plan de vol</a>
-            </li>
-            <li>
-                <a href="#">Lignes aériennes</a>
-            </li>
-            <li>
-                <a href="#">Compagnies par pays</a>
-            </li>
-        </ul>
-    </div>
+    {% include 'trafic/layouts_plan/_sidebar_plan.html' %}
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row">

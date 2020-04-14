@@ -4,25 +4,7 @@
 
 {% block body %}
 <div id="wrapper">
-    <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li>
-                <a href="{% url 'trafic:entite' %}">Compagnies</a>
-            </li>
-            <li>
-                <a href="{% url 'trafic:airport' %}">Aéroports</a>
-            </li>
-            <li>
-                <a href="{% url 'trafic:avion' %}">Avions</a>
-            </li>
-            <li>
-                <a href="{% url 'trafic:city' %}">Villes</a>
-            </li>
-            <li>
-                <a href="{% url 'trafic:pays' %}">Pays</a>
-            </li>
-        </ul>
-    </div>
+    {% include 'trafic/layouts_entite/_sidebar_entite.html' %}
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row">
@@ -30,35 +12,36 @@
                     <h1 align='center'>AirtrafficManagement | Entité impliquées dans le trafic</h1>
                     <div class="search-container">
                         <form action="">
-                          <input type="text" placeholder="Rechercher une compagnie aérienne" name="">
-                          <button type="submit"><i class="fa fa-search"></i></button>
+                            <input type="text" placeholder="Rechercher une compagnie aérienne" name="">
+                            <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
-                      </div>
                     </div>
-                    <h3 id="taille" align = 'center'>Liste des {{ airline|length }} premières compagnies aériennes avec {{ airlines|length }} compagnies au total dans la base</h3><br>
-                    <table class="content-table">
-                        <thead>
-                            <tr>
-                                <th>N°</th>
-                                <th>Nom de la compagnie</th>
-                                <th>Actif</th>
-                                <th>Pays d'origine</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for airline in airline %}
-                            <tr>
-                                <td>{{airline.airline_id}}</td>
-                                <td>{{airline.airline_name}}</td>
-                                <td>{{airline.airline_actif}}</td>
-                                <td>{{airline.country_id}}</td>
-                            </tr>
-                            {%endfor%}
-                        </tbody>
-                    </table>
                 </div>
+                <h3 id="taille" align='center'>Liste des {{ airline|length }} premières compagnies aériennes avec
+                    {{ airlines|length }} compagnies au total dans la base</h3><br>
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Nom de la compagnie</th>
+                            <th>Actif</th>
+                            <th>Pays d'origine</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for airline in airline %}
+                        <tr>
+                            <td>{{airline.airline_id}}</td>
+                            <td>{{airline.airline_name}}</td>
+                            <td>{{airline.airline_actif}}</td>
+                            <td>{{airline.country_id}}</td>
+                        </tr>
+                        {%endfor%}
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
+</div>
 </div>
 {% endblock body %}
