@@ -83,14 +83,14 @@ WSGI_APPLICATION = 'AirTrafficManagement.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'airtrafficmanagement',
-        'OPTIONS': {'options': '-c search_path=airtrafficmanagement'},
-        'USER': 'carlos',
-        'PASSWORD': 'carlos',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'NAME': 'Airtraffic',
+        'USER': 'postgres',
+        'PASSWORD': 'hamet1993',
+        'HOST': 'localhost',
+        'PORT': '5433',
     }
 }
+
 
 
 # Password validation
