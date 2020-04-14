@@ -18,6 +18,7 @@
                       </div>
                     </div>
                     <h3 id="taille" align = 'center'>Liste des {{ city|length }} premières villes avec {{ cities|length }} villes au total dans la base</h3><br>
+                    <div class="fixation">
                     <table class="content-table">
                         <thead>
                             <tr>
@@ -36,9 +37,10 @@
                             {%endfor%}
                         </tbody>
                     </table>
+                    </div>
                 </div>
             </div>
+            {% include 'trafic/_footer.html' %}
         </div>
     </div>
-</div>
 {% endblock body %}

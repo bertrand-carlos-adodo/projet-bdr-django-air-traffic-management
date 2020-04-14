@@ -79,6 +79,7 @@
         padding: 20px;
         position: relative;
         width: auto;
+        overflow: auto;
     }
 
     #wrapper.toggled #page-content-wrapper {
@@ -94,9 +95,18 @@
     font-size: 0.7em;
     min-width: 100%;
     border-radius: 5px 5px 0 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     text-align: center;
+    table-layout: fixed;
+    position: relative;
+}
+
+.fixation {
+    width: auto;
+    height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 #taille {

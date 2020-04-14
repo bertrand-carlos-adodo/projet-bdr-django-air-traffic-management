@@ -12,31 +12,34 @@
                     <h1 align='center'>AirtrafficManagement | Entité impliquées dans le trafic</h1>
                     <div class="search-container">
                         <form action="">
-                          <input type="text" placeholder="Rechercher un pays" name="">
-                          <button type="submit"><i class="fa fa-search"></i></button>
+                            <input type="text" placeholder="Rechercher un pays" name="">
+                            <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
-                      </div>
                     </div>
-                    <h3 id="taille" align = 'center'>Liste des {{ pays|length }} premiers pays avec {{ payss|length }} pays au total dans la base</h3><br>
-                    <table class="content-table">
-                        <thead>
-                            <tr>
-                                <th>N°</th>
-                                <th>Nom du pays</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for pays in pays %}
-                            <tr>
-                                <td>{{pays.country_id}}</td>
-                                <td>{{pays.country_name}}</td>
-                            </tr>
-                            {%endfor%}
-                        </tbody>
-                    </table>
+                </div>
+                <h3 id="taille" align='center'>Liste des {{ pays|length }} premiers pays avec {{ payss|length }} pays au
+                    total dans la base</h3><br>
+                <div class="fixation">
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Nom du pays</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for pays in pays %}
+                        <tr>
+                            <td>{{pays.country_id}}</td>
+                            <td>{{pays.country_name}}</td>
+                        </tr>
+                        {%endfor%}
+                    </tbody>
+                </table>
                 </div>
             </div>
         </div>
+        {% include 'trafic/_footer.html' %}
     </div>
 </div>
 {% endblock body %}
