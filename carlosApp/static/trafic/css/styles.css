@@ -43,17 +43,17 @@
     text-decoration: none;
 }
 
-.sidebar-nav > .sidebar-brand {
+.sidebar-nav>.sidebar-brand {
     height: 65px;
     font-size: 18px;
     line-height: 60px;
 }
 
-.sidebar-nav > .sidebar-brand a {
+.sidebar-nav>.sidebar-brand a {
     color: #fff;
 }
 
-.sidebar-nav > .sidebar-brand a:hover {
+.sidebar-nav>.sidebar-brand a:hover {
     color: #fff;
     background: none;
 }
@@ -62,26 +62,21 @@
     #wrapper {
         padding-left: 250px;
     }
-
     #wrapper.toggled {
         padding-left: 0;
     }
-
     #sidebar-wrapper {
         width: 270px;
     }
-
     #wrapper.toggled #sidebar-wrapper {
         width: 0;
     }
-
     #page-content-wrapper {
         padding: 20px;
         position: relative;
         width: auto;
         overflow: auto;
     }
-
     #wrapper.toggled #page-content-wrapper {
         position: relative;
         margin-right: 0;
@@ -138,47 +133,47 @@
 }
 
 .search-container {
-  margin-bottom: 1em;
-  margin-left: 0.5em;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
 }
 
 input[type=text] {
-  padding: 5px;
-  margin-top: 10px;
-  font-style: italic;
-  width: 90%;
-  font-size: small;
+    padding: 5px;
+    margin-top: 10px;
+    font-style: italic;
+    width: 90%;
+    font-size: small;
 }
 
 .search-container button {
-  /*float: right;*/
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #676869;
-  /*font-size: 17px;*/
-  border: none;
-  cursor: pointer;
+    /*float: right;*/
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #676869;
+    /*font-size: 17px;*/
+    border: none;
+    cursor: pointer;
 }
 
 .search-container button:hover {
-  background: #1e88e5;
+    background: #1e88e5;
 }
 
 @media screen and (max-width: 700px) {
-.search-container {
-    float: none;
-  }
-input[type=text], .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-
-input[type=text] {
-    border: 1px solid #1e88e5;
-  }
+    .search-container {
+        float: none;
+    }
+    input[type=text],
+    .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    input[type=text] {
+        border: 1px solid #1e88e5;
+    }
 }
