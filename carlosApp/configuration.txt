@@ -1,6 +1,17 @@
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'projet',
+        'OPTIONS': {'options': '-c search_path=gp5'},
+        'USER':'',
+        'HOST':'savennieres.math.univ-angers.fr',
+        'PORT':'5432',
+    }
+}
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'airtrafficmanagement',
         'OPTIONS': {'options': '-c search_path=airtrafficmanagement'},
         'USER': 'carlos',
@@ -9,7 +20,6 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-
 
 DATABASES = {
     'default': {

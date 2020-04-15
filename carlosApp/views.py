@@ -61,10 +61,10 @@ def show_pays(request):
 def show_avion(request):
     nom = request.POST.get('nom_avion', False)
     if not nom:
-        avion = Plane.objects.all()
+        avions = Plane.objects.all()
     else:
-        avion = Plane.objects.filter(plane_name__contains=nom)
-    return render(request, 'trafic/avion.html', {'avion': avion[:150], 'avions': avion, 'nom_avion': nom})
+        avions= Plane.objects.filter(plane_name__contains=nom)
+    return render(request, 'trafic/avion.html', { 'avions': avions})
 
 
 @login_required
