@@ -10,15 +10,18 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 align='center'>AirtrafficManagement | Entité impliquées dans le trafic</h1>
-                    <div class="search-container">
-                        <form action="">
-                          <input type="text" placeholder="Rechercher un aéroport" name="">
-                          <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                      </div>
-                    </div>
-                    <h3 id="taille" align = 'center'>Liste des {{ airport|length }} premiers aéroports avec {{ airports|length }} aéroports au total dans la base</h3><br>
-                    <div class="fixation">
+                    <article id="ordre">
+                        <h4 align="center">Rechercher un aéroport</h4>
+                        <div class="search-container">
+                            <form method="GET" action="">
+                                {{airportfilter.form}}
+                                <button type="submit"><i class="fa fa-search"> Search</i></button>
+                            </form>
+                        </div>
+                    </article>
+                </div>
+                <h3 id="taille" align='center'>Aéroports : {{ airports|length }} enrégistrement(s) au total dans la base</h3><br>
+                <div class="fixation">
                     <table class="content-table">
                         <thead>
                             <tr>
@@ -45,10 +48,10 @@
                             {%endfor%}
                         </tbody>
                     </table>
-                    </div>
                 </div>
             </div>
-            {% include 'trafic/_footer.html' %}
         </div>
+        {% include 'trafic/_footer.html' %}
     </div>
+</div>
 {% endblock body %}

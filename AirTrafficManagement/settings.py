@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'carlosApp.apps.CarlosappConfig',
     'django_extensions',
     'debug_toolbar',
+    'django_filters',
 ]
 
 MIDDLEWARE = [

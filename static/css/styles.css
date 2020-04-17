@@ -126,6 +126,8 @@ article {
     margin-bottom: 2em;
     padding: 1em;
     box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 article .content {
@@ -141,6 +143,7 @@ article a:hover {
 
 h1 {
     font-variant: small-caps;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #under1, #under2 {
