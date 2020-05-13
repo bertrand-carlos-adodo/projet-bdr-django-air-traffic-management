@@ -1,0 +1,15 @@
+{% extends 'trafic/base.html' %}
+
+{% block title %}AirtrafficManagement | Bilan{% endblock title %}
+
+{% block content %}
+    <h1 align = 'center'>AirtrafficManagement | Bilan statistique</h1>
+    <article align='center' id="ordre">
+        <h4 align="center">Entités intervenant dans le traffic</h4>
+        <br>
+        <div align='center' class="chiffre">
+            <p>Compagnies : {{ airline|length }} </p> <p>Aéroports : {{ airport|length }} </p> <p>Villes : {{ city|length }} </p> <p>Pays : {{ pays|length }} </p> <p>Avions : {{ avion|length }} </p> <p>Itinéraires : {{ routes|length }} </p>
+        </div>
+    </article>
+    {% include 'layouts/_footer.html' %}
+{% endblock content %}

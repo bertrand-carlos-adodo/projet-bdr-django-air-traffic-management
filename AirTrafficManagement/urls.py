@@ -28,7 +28,6 @@ urlpatterns = [
     path('logout/', views.deconnexion, name = 'deconnexion'),
     path('home/', views.home, name = 'home'),
     path('authentification/', views.authentification, name = 'authentification'),
-    path('statistique/', views.statistique, name = 'statistique'),
     path('trafic/', include('carlosApp.urls')),
 ]
 if settings.DEBUG:

@@ -32,10 +32,6 @@ def deconnexion(request):
     return HttpResponseRedirect(reverse('connexion'))
 
 @login_required
-def statistique(request):
-    return render(request, 'pages/statistique.html')
-
-@login_required
 def authentification(request):
     return render(request, 'pages/authentification.html')
 

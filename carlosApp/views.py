@@ -5,6 +5,12 @@ from .filters import *
 
 
 @login_required
+def statistique(request):
+    airline = Airline.objects.all()
+    return render(request, 'trafic/statistique.html')
+
+
+@login_required
 def show_airline(request):
     airline = Airline.objects.all()
     airlinefilter = AirlineFilter(request.GET, queryset=airline)

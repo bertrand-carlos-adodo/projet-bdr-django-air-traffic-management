@@ -149,6 +149,11 @@ input[type=text] {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.chiffre p {
+    display: inline-block;
+    text-align: center;
+}
+
 .search-container button {
     /*float: right;*/
     padding: 6px 10px;

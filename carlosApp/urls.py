@@ -4,6 +4,7 @@ from . import views
 app_name = 'trafic'
 
 urlpatterns = [
+    path('statistique/', views.statistique, name = 'statistique'),
     path('plan/', views.plan, name = 'plan'),
     path('densite/', views.densite, name = 'densite'),
     path('airline/', views.show_airline, name = 'entite'),
