@@ -1,9 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from .models import *
-#from django.http import Http404
 from .filters import *
-
 
 
 @login_required
@@ -59,38 +57,38 @@ def show_routes(request):
 
 @login_required
 def plan(request):
-    routes=Routes.objects.all()
-    routesfilter=RoutesFilter(request.GET, queryset=routes)
-    route=routesfilter.qs
-    #print(route)
-    return render(request, 'trafic/plan.html',{'route':route[:20],'routesfilter':routesfilter})
+    routes = Routes.objects.all()
+    routesfilter = RoutesFilter(request.GET, queryset=routes)
+    route = routesfilter.qs
+    # print(route)
+    return render(request, 'trafic/plan.html', {'route': route[:20], 'routesfilter': routesfilter})
+
 
 @login_required
 def compagniedesservant(request):
     pays = Country.objects.all()
     paysfilter = PaysFilter(request.GET, queryset=pays)
     pays = paysfilter.qs
-    id_pays=list(pays.values_list('country_id', flat=True))[0]
-    citys=City.objects.filter(country_id=id_pays)
-    airports=[]
+    id_pays = list(pays.values_list('country_id', flat=True))[0]
+    citys = City.objects.filter(country_id=id_pays)
+    airports = []
     for city in citys:
         airports.append(Airport.objects.filter(city_id=city))
-        
-    lignes=[]
-    filtre_lignes=[]
+
+    lignes = []
+    filtre_lignes = []
     for airport in airports:
-        airport_id=list(airport.values_list('airport_id', flat=True))[0]
+        airport_id = list(airport.values_list('airport_id', flat=True))[0]
         lignes.append(Routes.objects.filter(airport_id_dest=airport_id))
     for ligne in lignes:
-        if list(ligne)!=[]:
+        if list(ligne) != []:
             filtre_lignes.append(ligne)
-    results=[]
+    results = []
     for filtre in filtre_lignes:
         for fil in filtre:
             results.append(fil)
-    return render(request,'trafic/com_desservant.html',{'paysfilter':paysfilter,'results':results})
-    
-    
+    return render(request, 'trafic/com_desservant.html', {'paysfilter': paysfilter, 'results': results})
+
 
 @login_required
 def densite(request):

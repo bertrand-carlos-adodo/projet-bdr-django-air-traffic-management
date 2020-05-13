@@ -44,8 +44,6 @@ INSTALLED_APPS = [
     'django_extensions',
     'debug_toolbar',
     'django_filters',
-    'leaflet',
-    
 ]
 
 MIDDLEWARE = [
@@ -83,7 +81,7 @@ WSGI_APPLICATION = 'AirTrafficManagement.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-''' DATABASES = {
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'projet',
@@ -92,9 +90,8 @@ WSGI_APPLICATION = 'AirTrafficManagement.wsgi.application'
         'HOST':'savennieres.math.univ-angers.fr',
         'PORT':'5432',
     }
-} '''
+}'''
 
-'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -105,8 +102,8 @@ DATABASES = {
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
-}'''
-DATABASES = {
+}
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Airtraffic',
@@ -115,7 +112,7 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5433',
     }
-}
+}'''
 
 
 
