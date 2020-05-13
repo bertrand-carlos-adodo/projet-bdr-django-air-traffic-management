@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'django_extensions',
     'debug_toolbar',
     'django_filters',
+    'leaflet',
+    
 ]
 
 MIDDLEWARE = [
@@ -92,6 +94,7 @@ WSGI_APPLICATION = 'AirTrafficManagement.wsgi.application'
     }
 } '''
 
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -102,9 +105,8 @@ DATABASES = {
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
-}
-
-'''DATABASES = {
+}'''
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Airtraffic',
@@ -113,7 +115,7 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5433',
     }
-}'''
+}
 
 
 
@@ -158,6 +160,9 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
+LEAFLET_CONFIG = {
+    # conf here
+}
 LOGIN_URL = '/'
 
 INTERNAL_IPS = [

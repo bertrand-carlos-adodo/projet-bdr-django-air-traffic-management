@@ -60,3 +60,14 @@ class AirportFilter(django_filters.FilterSet):
     def __init__(self, *args, **kwargs):
         super(AirportFilter, self).__init__(*args, **kwargs)
         self.filters['city_id'].label = "Ville"
+
+class RoutesFilter(django_filters.FilterSet):
+
+    class Meta:
+        model = Routes
+        fields = ['airline_id']
+
+    def __init__(self, *args, **kwargs):
+        super(RoutesFilter, self).__init__(*args, **kwargs)
+        self.filters['airline_id'].label = "Compagnie"
+

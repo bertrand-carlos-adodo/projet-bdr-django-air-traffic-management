@@ -50,3 +50,6 @@ class Routes(models.Model):
     airport_id_source = models.ForeignKey(Airport, related_name='airport_id_source', on_delete=models.CASCADE)
     airport_id_dest = models.ForeignKey(Airport, on_delete=models.CASCADE)
     airline_id = models.ForeignKey(Airline, on_delete=models.CASCADE)
+    
+    def __str__(self):
+        return '%s %s' % (self.airport_id_source, self.airport_id_dest)
