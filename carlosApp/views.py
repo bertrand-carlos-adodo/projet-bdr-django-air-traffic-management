@@ -6,8 +6,14 @@ from .filters import *
 
 @login_required
 def statistique(request):
-    airline = Airline.objects.all()
-    return render(request, 'trafic/statistique.html')
+    sairline = Airline.objects.all()
+    sairport = Airport.objects.all()
+    scity = City.objects.all()
+    spays = Country.objects.all()
+    savion = Plane.objects.all()
+    sroutes = Routes.objects.all()
+    context = {'sairline':sairline, 'sairport':sairport, 'scity':scity, 'spays':spays, 'savion':savion, 'sroutes':sroutes}
+    return render(request, 'trafic/statistique.html', context)
 
 
 @login_required
