@@ -1,0 +1,36 @@
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<div class="contenu text-center">
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="number">{{ sairline|length }}</div>
+            <div class="">Compagnies</div>
+        </div>
+        <div class="col-sm-2">
+            <div class="number">{{ sairport|length }}</div>
+            <div class="">Aéroports</div>
+        </div>
+        <div class="col-sm-2">
+            <div class="number">{{ scity|length }}</div>
+            <div class="">Villes</div>
+        </div>
+        <div class="col-sm-2">
+            <div class="number">{{ spays|length }}</div>
+            <div class="">Pays</div>
+        </div>
+        <div class="col-sm-2">
+            <div class="number">{{ savion|length }}</div>
+            <div class="">Avions</div>
+        </div>
+        <div class="col-sm-2">
+            <div class="number">{{ sroutes|length }}</div>
+            <div class="">Itinéraires</div>
+        </div>
+    </div>
+    <script>
+        $(".number").counterUp({ time: 3000 });
+    </script>
+</div>
