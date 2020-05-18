@@ -19,6 +19,7 @@
                 </div>
                 <h3 id="taille" align='center'>Ligne : {{ route|length }} enrégistrement(s) au total dans la base</h3><br>
                 <div class="fixation">
+                    {%if route|length %}
                     <table class="content-table">
                         <thead>
                             <tr>
@@ -41,6 +42,8 @@
                             {%endfor%}
                         </tbody>
                     </table>
+                    {%else%}
+                    <h3 id="taille" align='center'>la compagnie selctione n'est plus actif</h3><br> {%endif%}
                 </div>
             </div>
         </div>

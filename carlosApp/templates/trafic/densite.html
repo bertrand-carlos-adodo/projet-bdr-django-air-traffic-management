@@ -1,16 +1,16 @@
-{% extends 'trafic/base.html' %}
-
-{% block title %}AirTrafficManagement | Densité du trafic{% endblock title %}
-
-{% block body %}
+{% extends 'trafic/base.html' %} {% load static %} {% block title %}AirTrafficManagement | Densité du trafic{% endblock title %} {% block body %}
 <div id="wrapper">
     {% include 'trafic/layouts_densite/_sidebar_densite.html' %}
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 align = 'center'>AirtrafficManagement | Densité du trafic</h1>
+                    <h1 align='center'> Densité du trafic a travers le monde</h1>
                     <p></p>
+                </div>
+                <div class="col-sm-6">
+                    <!-- <h1 align='center'>AirtrafficManagement | Densité du trafic</h1> -->
+                    <iframe width="1000" height="410" src="{% static 'image/NATS EUROPE 24 - European air traffic data visualization.mp4' %}" frameborder="0"></iframe>
                 </div>
             </div>
         </div>

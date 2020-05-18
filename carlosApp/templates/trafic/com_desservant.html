@@ -1,5 +1,4 @@
-{% extends 'trafic/base.html' %} {% block title %}AirTrafficManagement | Plans de vol{% endblock title %}
-{% block body %}
+{% extends 'trafic/base.html' %} {% block title %}AirTrafficManagement | Plans de vol{% endblock title %} {% block body %}
 <div id="wrapper">
     {% include 'trafic/layouts_plan/_sidebar_plan.html' %}
     <div id="page-content-wrapper">
@@ -18,6 +17,7 @@
                         </div>
                     </article>
                 </div>
+                <h3 id="taille" align='center'>Ligne : {{ results|length }} enrégistrement(s) au total dans la base</h3><br>
                 <div class="fixation">
                     <table class="content-table">
                         <thead>
