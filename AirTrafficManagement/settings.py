@@ -81,16 +81,24 @@ WSGI_APPLICATION = 'AirTrafficManagement.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+##################################################
+        #CONFIGURATION SERVEUR FACULTE#
+##################################################
+
 '''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'projet',
         'OPTIONS': {'options': '-c search_path=gp5'},
         'USER':'',
-        'HOST':'savennieres.math.univ-angers.fr',
+        'HOST':'data.stud',
         'PORT':'5432',
     }
 }'''
+
+##################################################
+        #CONFIGURATION SERVEUR CARLOS#
+##################################################
 
 DATABASES = {
     'default': {
@@ -103,6 +111,11 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
+##################################################
+        #CONFIGURATION SERVEUR HAMET#
+##################################################
+
 '''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -113,7 +126,20 @@ DATABASES = {
         'PORT': '5433',
     }
 }'''
+##################################################
+        #CONFIGURATION SERVEUR FRANCOIS#
+##################################################
 
+'''DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'trafic',
+        'USER': 'francois',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}'''
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators

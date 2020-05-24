@@ -1,13 +1,21 @@
+##################################################
+        #CONFIGURATION SERVEUR FACULTE#
+##################################################
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'projet',
         'OPTIONS': {'options': '-c search_path=gp5'},
         'USER':'',
-        'HOST':'savennieres.math.univ-angers.fr',
+        'HOST':'data.stud',
         'PORT':'5432',
     }
 }
+
+##################################################
+        #CONFIGURATION SERVEUR CARLOS#
+##################################################
 
 DATABASES = {
     'default': {
@@ -21,6 +29,10 @@ DATABASES = {
     }
 }
 
+##################################################
+        #CONFIGURATION SERVEUR HAMET#
+##################################################
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -29,5 +41,19 @@ DATABASES = {
         'PASSWORD': 'hamet1993',
         'HOST': 'localhost',
         'PORT': '5433',
+    }
+}
+##################################################
+        #CONFIGURATION SERVEUR FRANCOIS#
+##################################################
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'trafic',
+        'USER': 'francois',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }

@@ -12,7 +12,8 @@ def statistique(request):
     spays = Country.objects.all()
     savion = Plane.objects.all()
     sroutes = Routes.objects.all()
-    context = {'sairline':sairline, 'sairport':sairport, 'scity':scity, 'spays':spays, 'savion':savion, 'sroutes':sroutes}
+    context = {'sairline': sairline, 'sairport': sairport, 'scity': scity,
+               'spays': spays, 'savion': savion, 'sroutes': sroutes}
     return render(request, 'trafic/statistique.html', context)
 
 
@@ -72,7 +73,7 @@ def plan(request):
     route = Routes.objects.all()
     routesfilter = RoutesFilter(request.GET, queryset=route)
     route = routesfilter.qs
-    return render(request, 'trafic/plan.html', {'route': route[:100], 'routes':route,
+    return render(request, 'trafic/plan.html', {'route': route[:100], 'routes': route,
                                                 'routesfilter': routesfilter})
 
 

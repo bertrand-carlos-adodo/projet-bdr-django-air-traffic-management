@@ -162,6 +162,11 @@ input[type=text] {
     font-variant: small-caps;
 }
 
+h3 {
+    font-variant: small-caps;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
   .contenu div:nth-child(2){
     color:#1e88e5;
     font-size:20px;
