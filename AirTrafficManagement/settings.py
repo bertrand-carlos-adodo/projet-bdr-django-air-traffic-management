@@ -92,18 +92,18 @@ WSGI_APPLICATION = 'AirTrafficManagement.wsgi.application'
     }
 }'''
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'airtrafficmanagement',
-#         'OPTIONS': {'options': '-c search_path=airtrafficmanagement'},
-#         'USER': 'carlos',
-#         'PASSWORD': 'carlos',
-#         'HOST': '127.0.0.1',
-#         'PORT': '5432',
-#     }
-# }
 DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'airtrafficmanagement',
+        'OPTIONS': {'options': '-c search_path=airtrafficmanagement'},
+        'USER': 'carlos',
+        'PASSWORD': 'carlos',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
+}
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Airtraffic',
@@ -112,8 +112,7 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5433',
     }
-}
-
+}'''
 
 
 # Password validation
@@ -164,6 +163,6 @@ LOGIN_URL = '/'
 
 INTERNAL_IPS = [
     # ...
-    #'127.0.0.1',
+    # '127.0.0.1',
     # ...
 ]
