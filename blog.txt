@@ -37,3 +37,18 @@ Création des modèles django [voir fichier models.py dans la branche carlos-app
 08/04/2020 : Gestion de l'authentification à l'application : working progress
 09/04/2020 : Gestion de l'authentification à l'application : Done
 10/04/2020 : Web : Mise en forme
+11/04/2020 : Web
+12/04/2020 : Standby
+28/04/2020 : Reprise
+01/05/2020 : Intégration des vidéos découverte trafic
+05/05/2020 : Page statistique stat1 : Initialisation
+08/05/2020 : Working progress
+10/05/2020 : Standby
+15/05/2020 : Working progress : Reprise
+20/05/2020 : Réunion entre collaborateurs
+22/05/2020 : Densité du trafic
+23/05/2020 : Essaie d'intégration de la météo
+24/05/2020 : Edition des fichiers de configuration
+24/05/2020 : Mise à jour du compte github
+24/04/2020 : Réunion entre collaborateurs pour faire le point
+25/05/2020 : Soutenance projet GP5
