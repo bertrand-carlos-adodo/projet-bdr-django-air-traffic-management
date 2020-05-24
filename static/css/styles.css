@@ -146,6 +146,11 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h3 {
+    font-variant: small-caps;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #under1, #under2 {
     text-decoration: underline;
 }

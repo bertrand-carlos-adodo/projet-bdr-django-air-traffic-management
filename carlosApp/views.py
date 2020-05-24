@@ -69,11 +69,11 @@ def show_routes(request):
 
 @login_required
 def plan(request):
-    routes = Routes.objects.all()
-    routesfilter = RoutesFilter(request.GET, queryset=routes)
+    route = Routes.objects.all()
+    routesfilter = RoutesFilter(request.GET, queryset=route)
     route = routesfilter.qs
-    # print(route)
-    return render(request, 'trafic/plan.html', {'route': route[:20], 'routesfilter': routesfilter})
+    return render(request, 'trafic/plan.html', {'route': route[:100], 'routes':route,
+                                                'routesfilter': routesfilter})
 
 
 @login_required
@@ -86,7 +86,6 @@ def compagniedesservant(request):
     airports = []
     for city in citys:
         airports.append(Airport.objects.filter(city_id=city))
-
     lignes = []
     filtre_lignes = []
     for airport in airports:
@@ -104,7 +103,6 @@ def compagniedesservant(request):
 
 @login_required
 def densite(request):
-
     return render(request, 'trafic/densite.html')
 
 
